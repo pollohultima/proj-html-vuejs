@@ -51,20 +51,18 @@
     <div class="jumbo position-relative">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="side_text col-4">
-          <h1 class="mb_40">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-            maiores?
+          <h1 class="mb-4 fw-bolder">
+            Complete Your Dreams in Javas Programming
           </h1>
-          <p class="mb_40">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus, ab ad? Doloribus quo quae veniam qui. Commodi,
-            deleniti maxime. Natus quod ipsam blanditiis deserunt officia?
-            Maxime doloremque quam accusantium exercitationem?
+          <p class="mb-4">
+            Learn any coding program in distance and for a reasonable fee. You
+            don't have to struggle alone, you've got our assistance and help
           </p>
           <a class="btn p-0 border-0 text-center text-white fw-bold" href="#"
             ><i class="fas fa-download"></i> Download free E-book</a
           >
         </div>
+
         <div class="hero_image">
           <img
             class="img-fluid"
@@ -103,7 +101,7 @@ header {
     .nav_search {
       a {
         text-decoration: none;
-        color: $header_font_color;
+        color: $max_wine;
         .fa-chevron-down {
           font-size: 8px;
           vertical-align: middle;
@@ -125,10 +123,10 @@ header {
     .container {
       height: 720px;
       h1 {
-        color: $header_font_color;
+        color: $max_wine;
       }
       .btn {
-        background: $header_font_color;
+        background: $max_wine;
         line-height: 50px;
         vertical-align: middle;
         width: 260px;
