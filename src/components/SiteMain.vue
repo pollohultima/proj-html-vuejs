@@ -89,7 +89,7 @@
           "
         >
           <!-- Side image -->
-          <div class="position-relative">
+          <div class="position-relative ps-5">
             <img
               class="about_us_3 position-relative"
               src="../assets/img/about-us-03-image-01.png"
@@ -178,8 +178,29 @@
       </div>
     </section>
 
+    <!-- Banner with MaxCoach Data -->
     <div class="data_banner">
-      <div class="container"></div>
+      <div class="container d-flex align-items-center">
+        <div class="col-3 text-center fw-bold">
+          <h1 class="mb-3 fw-bold">1.926</h1>
+          <p>FINISHED SESSIONS</p>
+        </div>
+
+        <div class="col-3 text-center fw-bold">
+          <h1 class="mb-3 fw-bold">3.092+</h1>
+          <p>ENROLLED LEARNERS</p>
+        </div>
+
+        <div class="col-3 text-center fw-bold">
+          <h1 class="mb-3 fw-bold">200</h1>
+          <p>ONLINE INSTRUCTORS</p>
+        </div>
+
+        <div class="col-3 text-center fw-bold">
+          <h1 class="mb-3 fw-bold">100%</h1>
+          <p>SATISFACTION RATE</p>
+        </div>
+      </div>
     </div>
 
     <section class="last_courses"></section>
@@ -228,7 +249,7 @@ export default {};
     }
     .purple_stain {
       width: 390px;
-      left: 50px !important;
+      left: 100px !important;
       top: 295px;
       z-index: 1;
     }
@@ -236,6 +257,20 @@ export default {};
       .active {
         background: $lightaquagreen;
       }
+    }
+  }
+}
+
+.data_banner {
+  height: 230px;
+  background: #faf8f6;
+  .container {
+    height: 100%;
+    h1 {
+      color: $aquagreen;
+    }
+    p {
+      color: $max_wine;
     }
   }
 }
