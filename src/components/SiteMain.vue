@@ -78,7 +78,7 @@
           </div>
         </div>
 
-        <!-- Side image -->
+        <!-- MaxCoach "Dream" -->
         <div
           class="
             maxcoach
@@ -88,24 +88,91 @@
             justify-content-between
           "
         >
-          <img src="../assets/img/about-us-03-image-01.png" alt="" />
+          <!-- Side image -->
+          <div class="position-relative">
+            <img
+              class="about_us_3 position-relative"
+              src="../assets/img/about-us-03-image-01.png"
+              alt=""
+            />
+            <img
+              class="purple_stain position-absolute translate-middle"
+              src="../assets/img/underlay-shape-lilla.svg"
+              alt=""
+            />
+          </div>
 
           <!-- Side text section -->
-          <div class="side_text col-5">
-            <h6 class="fs_12 text-muted mb-3">
+          <div class="side_text col-6">
+            <h6 class="fs_12 text-muted mb-4">
               DREAM WITH <span class="fw-bolder">MAXCOACH</span>
             </h6>
-            <h1 class="mb-4 fw-bolder">
+            <h1 class="mb-5 fw-bolder">
               Construct A <span class="fw-normal">Stunning</span> Career
               Perspective
             </h1>
-            <p class="mb-4">
-              Learn any coding program in distance and for a reasonable fee. You
-              don't have to struggle alone, you've got our assistance and help
-            </p>
-            <a class="btn p-0 border-0 text-center text-white fw-bold" href="#"
-              ><i class="fas fa-download"></i> Download free E-book</a
-            >
+
+            <!-- Side cards with header title -->
+            <div class="card shadow mb-4">
+              <h6
+                class="
+                  card-header
+                  fw-bold
+                  text-white
+                  py-3
+                  d-flex
+                  justify-content-between
+                  active
+                "
+              >
+                <span
+                  >Multiple Platforms Supported for Teaching & Studying
+                </span>
+                <span><i class="fas fa-minus-circle fs-6"></i> </span>
+              </h6>
+              <div class="card-body p-4">
+                <p class="card-text text-muted">
+                  MaxCoach supports the act of teaching and learning on multiple
+                  platforms like online or offline via material downloads. We
+                  know things aren't supposed to be devoured in a short time,
+                  you can always acces our knowledge base from any device.
+                </p>
+              </div>
+            </div>
+
+            <div class="card shadow mb-4">
+              <h6
+                class="
+                  card-header
+                  fw-bold
+                  text-muted
+                  bg-white
+                  py-3
+                  d-flex
+                  justify-content-between
+                "
+              >
+                <span>Multiple Course Partecipation at the Same Time</span>
+                <span><i class="fas fa-plus-circle fs-6"></i> </span>
+              </h6>
+            </div>
+
+            <div class="card shadow mb-4">
+              <h6
+                class="
+                  card-header
+                  fw-bold
+                  text-muted
+                  bg-white
+                  py-3
+                  d-flex
+                  justify-content-between
+                "
+              >
+                <span>Track Study Progress & Deliver Prompt Feedback</span>
+                <span><i class="fas fa-plus-circle fs-6"></i> </span>
+              </h6>
+            </div>
           </div>
         </div>
       </div>
@@ -134,6 +201,7 @@ export default {};
 
 .coding_course {
   padding: 90px 0;
+
   h1 {
     color: $max_wine;
     span {
@@ -150,6 +218,23 @@ export default {};
       .btn {
         text-decoration: none;
         color: $max_wine;
+      }
+    }
+  }
+
+  .maxcoach {
+    .about_us_3 {
+      z-index: 2;
+    }
+    .purple_stain {
+      width: 390px;
+      left: 50px !important;
+      top: 295px;
+      z-index: 1;
+    }
+    .card {
+      .active {
+        background: $lightaquagreen;
       }
     }
   }
