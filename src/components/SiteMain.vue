@@ -179,7 +179,7 @@
     </section>
 
     <!-- Banner with MaxCoach Data -->
-    <div class="data_banner">
+    <div class="data_banner mb_100">
       <div class="container d-flex align-items-center">
         <div class="col-3 text-center fw-bold">
           <h1 class="mb-3 fw-bold">1.926</h1>
@@ -203,7 +203,225 @@
       </div>
     </div>
 
-    <section class="last_courses"></section>
+    <!-- Latest Courses section -->
+    <section class="last_courses">
+      <h6 class="fs_12 text-muted mb-3 text-center">
+        CHOOSE WHERE YOU'D LIKE TO BEGIN
+      </h6>
+      <h1 class="mb_50 fw-bolder text-center">
+        Latest Featured <span class="fw-normal">Courses</span>
+      </h1>
+
+      <div class="container">
+        <div class="row justify-content-between flex-wrap gy-5">
+          <div class="card position-relative border-0 p-0">
+            <img
+              src="../assets/img/course-02-480x298.jpg"
+              class="card-img-top rounded-top"
+              alt="..."
+            />
+
+            <div class="price position-absolute top-0 end-0 rounded">
+              <h5 class="m-0 text-white fw-bold p-2">$40.00</h5>
+            </div>
+            <div class="card-body p-3">
+              <div class="card-text fs_14 text-muted mb-3">
+                <img
+                  class="rounded-circle"
+                  src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg"
+                  alt=""
+                />
+                <span class="text-muted ps-3">Blanche Fields</span>
+              </div>
+
+              <h5 class="card-title fw-bold mb-4">
+                Learning to Write as a Professional Author
+              </h5>
+
+              <span class="card-text fs_14">
+                <span class="text-muted"
+                  ><i class="far fa-file-alt"></i> 20 Lessons</span
+                >
+                <span class="ms-4 text-muted"
+                  ><i class="far fa-user text-muted"></i> 50 Students</span
+                >
+              </span>
+            </div>
+          </div>
+
+          <div class="card position-relative border-0 p-0">
+            <img
+              src="../assets/img/stock-full-hd-03-480x298.jpg"
+              class="card-img-top rounded-top"
+              alt="..."
+            />
+            <div class="price position-absolute top-0 end-0 rounded">
+              <h5 class="m-0 text-white fw-bold p-2">Free</h5>
+            </div>
+
+            <div class="card-body p-3">
+              <div class="card-text fs_14 text-muted mb-3">
+                <img
+                  class="rounded-circle"
+                  src="../assets/img/d0d504142acfde820eef2f11feea6253.jpeg"
+                  alt=""
+                />
+                <span class="text-muted ps-3">Mary Strickland</span>
+              </div>
+
+              <h5 class="card-title fw-bold mb-4">
+                Customer-centric Info-Tech Strategies
+              </h5>
+
+              <span class="card-text fs_14">
+                <span class="text-muted"
+                  ><i class="far fa-file-alt"></i> 24 Lessons</span
+                >
+                <span class="ms-4 text-muted"
+                  ><i class="far fa-user text-muted"></i> 769 Students</span
+                >
+              </span>
+            </div>
+          </div>
+
+          <div class="card position-relative border-0 p-0">
+            <img
+              src="../assets/img/stock-full-hd-04-480x298.jpg"
+              class="card-img-top rounded-top"
+              alt="..."
+            />
+            <div class="price position-absolute top-0 end-0 rounded">
+              <h5 class="m-0 text-white fw-bold p-2">$19.00</h5>
+            </div>
+            <div class="card-body p-3">
+              <div class="card-text fs_14 text-muted mb-3">
+                <img
+                  class="rounded-circle"
+                  src="../assets/img/d0d504142acfde820eef2f11feea6253.jpeg"
+                  alt=""
+                />
+                <span class="text-muted ps-3">Mary Strickland</span>
+              </div>
+
+              <h5 class="card-title fw-bold mb-4">
+                Open Programming Courses for Everyone: Python
+              </h5>
+
+              <span class="card-text fs_14">
+                <span class="text-muted"
+                  ><i class="far fa-file-alt"></i> 17 Lessons</span
+                >
+                <span class="ms-4 text-muted"
+                  ><i class="far fa-user text-muted"></i> 62 Students</span
+                >
+              </span>
+            </div>
+          </div>
+
+          <div class="card position-relative border-0 p-0">
+            <img
+              src="../assets/img/stock-full-hd-06-480x298.jpg"
+              class="card-img-top rounded-top"
+              alt="..."
+            />
+            <div class="price position-absolute top-0 end-0 rounded">
+              <h5 class="m-0 text-white fw-bold p-2">$26.00</h5>
+            </div>
+            <div class="card-body p-3">
+              <div class="card-text fs_14 text-muted mb-3">
+                <img
+                  class="rounded-circle"
+                  src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg"
+                  alt=""
+                />
+                <span class="text-muted ps-3">Blanche Fields</span>
+              </div>
+
+              <h5 class="card-title fw-bold mb-4">
+                Academic Listening and Note-taking
+              </h5>
+
+              <span class="card-text fs_14">
+                <span class="text-muted"
+                  ><i class="far fa-file-alt"></i> 14 Lessons</span
+                >
+                <span class="ms-4 text-muted"
+                  ><i class="far fa-user text-muted"></i> 67 Students</span
+                >
+              </span>
+            </div>
+          </div>
+
+          <div class="card position-relative border-0 p-0">
+            <img
+              src="../assets/img/course-featured-image-01-480x298.jpg"
+              class="card-img-top rounded-top"
+              alt="..."
+            />
+            <div class="price position-absolute top-0 end-0 rounded">
+              <h5 class="m-0 text-white fw-bold p-2">$39.00</h5>
+            </div>
+            <div class="card-body p-3">
+              <div class="card-text fs_14 text-muted mb-3">
+                <img
+                  class="rounded-circle"
+                  src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg"
+                  alt=""
+                />
+                <span class="text-muted ps-3">Blanche Fields</span>
+              </div>
+
+              <h5 class="card-title fw-bold mb-4">
+                Master jQuery in a Shot Period of Time
+              </h5>
+
+              <span class="card-text fs_14">
+                <span class="text-muted"
+                  ><i class="far fa-file-alt"></i> 6 Lessons</span
+                >
+                <span class="ms-4 text-muted"
+                  ><i class="far fa-user text-muted"></i> 51 Students</span
+                >
+              </span>
+            </div>
+          </div>
+
+          <div class="card position-relative border-0 p-0">
+            <img
+              src="../assets/img/course-02-480x298.jpg"
+              class="card-img-top rounded-top"
+              alt="..."
+            />
+            <div class="price position-absolute top-0 end-0 rounded">
+              <h5 class="m-0 text-white fw-bold p-2">$59.00</h5>
+            </div>
+            <div class="card-body p-3">
+              <div class="card-text fs_14 text-muted mb-3">
+                <img
+                  class="rounded-circle"
+                  src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg"
+                  alt=""
+                />
+                <span class="text-muted ps-3">Blanche Fields</span>
+              </div>
+
+              <h5 class="card-title fw-bold mb-4">
+                Introduction for Javascript for Beginners
+              </h5>
+
+              <span class="card-text fs_14">
+                <span class="text-muted"
+                  ><i class="far fa-file-alt"></i> 14 Lessons</span
+                >
+                <span class="ms-4 text-muted"
+                  ><i class="far fa-user text-muted"></i> 76 Students</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="e_learn"></section>
 
@@ -271,6 +489,24 @@ export default {};
     }
     p {
       color: $max_wine;
+    }
+  }
+}
+
+.last_courses {
+  height: 100%;
+  h1 {
+    color: $max_wine;
+  }
+  span {
+    color: $aquagreen;
+  }
+  .card {
+    width: 370px;
+    .price {
+      background: $aquagreen;
+      border-top-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
     }
   }
 }
