@@ -204,7 +204,7 @@
     </div>
 
     <!-- Latest Courses section -->
-    <section class="last_courses mb_100">
+    <section class="last_courses pb_100 mb_100">
       <h6 class="fs_12 text-muted mb-3 text-center">
         CHOOSE WHERE YOU'D LIKE TO BEGIN
       </h6>
@@ -501,6 +501,9 @@ export default {};
 
 .last_courses {
   height: 100%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  background-image: linear-gradient(white, #f5f5f5);
   h1 {
     color: $max_wine;
   }
