@@ -2,7 +2,9 @@
   <main>
     <section class="coding_course">
       <div class="container text-center">
-        <h6 class="fs_12 text-muted mb-3">START LEARNING CODING LANGUAGES</h6>
+        <h6 class="fs_12 text-muted mb-3 fw-bold">
+          START LEARNING CODING LANGUAGES
+        </h6>
         <h1 class="mb_100 fw-bolder">
           Build Your Dream <span class="fw-normal">TODAY</span>
         </h1>
@@ -104,7 +106,7 @@
 
           <!-- Side text section -->
           <div class="side_text col-6">
-            <h6 class="fs_12 text-muted mb-4">
+            <h6 class="fs_12 text-muted mb-4 fw-bold">
               DREAM WITH <span class="fw-bolder">MAXCOACH</span>
             </h6>
             <h1 class="mb-5 fw-bolder">
@@ -205,7 +207,7 @@
 
     <!-- Latest Courses section -->
     <section class="last_courses pb_100 mb_100">
-      <h6 class="fs_12 text-muted mb-3 text-center">
+      <h6 class="fs_12 text-muted mb-3 text-center fw-bold">
         CHOOSE WHERE YOU'D LIKE TO BEGIN
       </h6>
 
@@ -429,7 +431,123 @@
       </div>
     </section>
 
-    <section class="e_learn"></section>
+    <section class="e_learn">
+      <div class="container mb_150">
+        <div class="text-start d-flex">
+          <!-- Side text section -->
+          <div class="side_text col-5">
+            <h6 class="fs_12 text-muted mb-4 fw-bold">
+              WHY HESITATE TO REGISTER?
+            </h6>
+            <h1 class="mb-4 fw-bolder">
+              Learn At Your Own <span class="fw-normal">Pace</span>
+            </h1>
+
+            <!-- Features List -->
+            <ul class="list-group border-0 mb-4">
+              <li class="list-group-item px-0">
+                <i class="fas fa-check pe-3"></i> Select & customize courses to
+                you preferences
+              </li>
+              <li class="list-group-item px-0">
+                <i class="fas fa-check pe-3"></i> Change the tutor and make
+                arrangements
+              </li>
+              <li class="list-group-item px-0">
+                <i class="fas fa-check pe-3"></i> Partecipate in events to join
+                others
+              </li>
+              <li class="list-group-item px-0">
+                <i class="fas fa-check pe-3"></i> Get desired cretificate
+                delivered at house
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="btn btn-link fs_12 fw-bold text-white p-0 border-0"
+              >Get started for free</a
+            >
+          </div>
+
+          <!-- Side image -->
+          <div class="position-relative ms-4 ps-5">
+            <img
+              class="learn_guy position-relative"
+              src="../assets/img/home-5-image-01.png"
+              alt=""
+            />
+            <img
+              class="grey_stain position-absolute translate-middle"
+              src="../assets/img/underlay-shape-grey.svg"
+              alt=""
+            />
+            <img
+              class="mc_shape position-absolute translate-middle"
+              src="../assets/img/maxcoach-shape-05.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="text-start d-flex align-items-center wrapper">
+          <!-- Side image -->
+          <div class="position-relative ps-5">
+            <img
+              class="learn_mobile position-relative"
+              src="../assets/img/home-5-image-02.png"
+              alt=""
+            />
+            <img
+              class="grey_stain_2 position-absolute translate-middle"
+              src="../assets/img/underlay-shape-grey.svg"
+              alt=""
+            />
+            <img
+              class="mc_shape_square position-absolute translate-middle"
+              src="../assets/img/maxcoach-shape-07.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Side text section -->
+          <div class="side_text col-5 ms_150">
+            <h6 class="fs_12 text-muted mb-4 fw-bold">
+              WHY HESITATE TO REGISTER?
+            </h6>
+            <h1 class="mb-4 fw-bolder">
+              Learn At Your Own <span class="fw-normal">Pace</span>
+            </h1>
+
+            <!-- Features List -->
+            <ul class="list-group border-0 mb-4">
+              <li class="list-group-item px-0">
+                <i class="fas fa-check pe-3"></i> Select & customize courses to
+                you preferences
+              </li>
+              <li class="list-group-item px-0">
+                <i class="fas fa-check pe-3"></i> Change the tutor and make
+                arrangements
+              </li>
+              <li class="list-group-item px-0">
+                <i class="fas fa-check pe-3"></i> Partecipate in events to join
+                others
+              </li>
+              <li class="list-group-item px-0">
+                <i class="fas fa-check pe-3"></i> Get desired cretificate
+                delivered at house
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="btn btn-link fs_12 fw-bold text-white p-0 border-0"
+              >Get started for free</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="events"></section>
 
@@ -523,6 +641,68 @@ export default {};
     width: 260px;
     line-height: 50px;
     text-decoration: none;
+  }
+}
+
+.e_learn {
+  .learn_guy {
+    z-index: 2;
+  }
+
+  .grey_stain {
+    width: 430px;
+    left: 180px !important;
+    top: 350px;
+    z-index: 1;
+  }
+
+  .mc_shape {
+    right: -170px;
+    bottom: -35px;
+  }
+
+  .wrapper {
+    margin-left: 80px;
+    .learn_mobile {
+      z-index: 2;
+    }
+
+    .grey_stain_2 {
+      width: 450px;
+      left: 140px !important;
+      top: 325px;
+      z-index: 1;
+    }
+
+    .mc_shape_square {
+      right: -200px;
+      bottom: -35px;
+    }
+  }
+
+  h1 {
+    color: $max_wine;
+    padding-right: 100px;
+  }
+  span {
+    color: $aquagreen;
+  }
+  .side_text {
+    .list-group {
+      .list-group-item {
+        border: 0;
+        i {
+          color: $aquagreen;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .btn {
+      background: $aquagreen;
+      width: 210px;
+      line-height: 50px;
+      text-decoration: none;
+    }
   }
 }
 </style>
