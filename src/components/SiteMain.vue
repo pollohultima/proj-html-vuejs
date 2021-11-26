@@ -204,16 +204,17 @@
     </div>
 
     <!-- Latest Courses section -->
-    <section class="last_courses">
+    <section class="last_courses mb_100">
       <h6 class="fs_12 text-muted mb-3 text-center">
         CHOOSE WHERE YOU'D LIKE TO BEGIN
       </h6>
+
       <h1 class="mb_50 fw-bolder text-center">
         Latest Featured <span class="fw-normal">Courses</span>
       </h1>
 
       <div class="container">
-        <div class="row justify-content-between flex-wrap gy-5">
+        <div class="row mb-5 justify-content-between flex-wrap gy-5">
           <div class="card position-relative border-0 p-0">
             <img
               src="../assets/img/course-02-480x298.jpg"
@@ -420,6 +421,11 @@
             </div>
           </div>
         </div>
+        <div class="row justify-content-center">
+          <a href="#" class="btn btn-link fs_12 fw-bold text-white p-0 border-0"
+            >View all courses <i class="fas fa-long-arrow-alt-right"></i
+          ></a>
+        </div>
       </div>
     </section>
 
@@ -508,6 +514,12 @@ export default {};
       border-top-left-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
     }
+  }
+  .btn {
+    background: $aquagreen;
+    width: 260px;
+    line-height: 50px;
+    text-decoration: none;
   }
 }
 </style>
