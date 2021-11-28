@@ -50,7 +50,7 @@
     <!-- Header Jumbo -->
     <div class="jumbo position-relative">
       <div class="container d-flex justify-content-between align-items-center">
-        <div class="side_text col-4">
+        <div class="side_text col-4 mb-3">
           <h1 class="mb-4 fw-bolder">
             Complete Your Dreams in Javas Programming
           </h1>

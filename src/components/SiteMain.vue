@@ -216,208 +216,43 @@
       </h1>
 
       <div class="container">
-        <div class="row mb-5 justify-content-between flex-wrap gy-5">
-          <div class="card position-relative border-0 p-0">
+        <div class="row mb-5 justify-content-between gy-5">
+          <div
+            class="card position-relative border-0 p-0"
+            v-for="course in courses"
+            :key="course.id"
+          >
             <img
-              src="../assets/img/course-02-480x298.jpg"
+              :src="require(`../assets/img/${course.course_img}`)"
               class="card-img-top rounded-top"
               alt="..."
             />
 
             <div class="price position-absolute top-0 end-0 rounded">
-              <h5 class="m-0 text-white fw-bold p-2">$40.00</h5>
+              <h5 class="m-0 text-white fw-bold p-2">{{ course.price }}</h5>
             </div>
             <div class="card-body p-3">
               <div class="card-text fs_14 text-muted mb-3">
                 <img
                   class="rounded-circle"
-                  src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg"
+                  :src="require(`../assets/img/${course.teacher_img}`)"
                   alt=""
                 />
-                <span class="text-muted ps-3">Blanche Fields</span>
+                <span class="text-muted ps-3">{{ course.teacher_name }}</span>
               </div>
 
               <h5 class="card-title fw-bold mb-4">
-                Learning to Write as a Professional Author
+                {{ course.course_name }}
               </h5>
 
               <span class="card-text fs_14">
                 <span class="text-muted"
-                  ><i class="far fa-file-alt"></i> 20 Lessons</span
+                  ><i class="far fa-file-alt"></i>
+                  {{ course.lessons }} Lessons</span
                 >
                 <span class="ms-4 text-muted"
-                  ><i class="far fa-user text-muted"></i> 50 Students</span
-                >
-              </span>
-            </div>
-          </div>
-
-          <div class="card position-relative border-0 p-0">
-            <img
-              src="../assets/img/stock-full-hd-03-480x298.jpg"
-              class="card-img-top rounded-top"
-              alt="..."
-            />
-            <div class="price position-absolute top-0 end-0 rounded">
-              <h5 class="m-0 text-white fw-bold p-2">Free</h5>
-            </div>
-
-            <div class="card-body p-3">
-              <div class="card-text fs_14 text-muted mb-3">
-                <img
-                  class="rounded-circle"
-                  src="../assets/img/d0d504142acfde820eef2f11feea6253.jpeg"
-                  alt=""
-                />
-                <span class="text-muted ps-3">Mary Strickland</span>
-              </div>
-
-              <h5 class="card-title fw-bold mb-4">
-                Customer-centric Info-Tech Strategies
-              </h5>
-
-              <span class="card-text fs_14">
-                <span class="text-muted"
-                  ><i class="far fa-file-alt"></i> 24 Lessons</span
-                >
-                <span class="ms-4 text-muted"
-                  ><i class="far fa-user text-muted"></i> 769 Students</span
-                >
-              </span>
-            </div>
-          </div>
-
-          <div class="card position-relative border-0 p-0">
-            <img
-              src="../assets/img/stock-full-hd-04-480x298.jpg"
-              class="card-img-top rounded-top"
-              alt="..."
-            />
-            <div class="price position-absolute top-0 end-0 rounded">
-              <h5 class="m-0 text-white fw-bold p-2">$19.00</h5>
-            </div>
-            <div class="card-body p-3">
-              <div class="card-text fs_14 text-muted mb-3">
-                <img
-                  class="rounded-circle"
-                  src="../assets/img/d0d504142acfde820eef2f11feea6253.jpeg"
-                  alt=""
-                />
-                <span class="text-muted ps-3">Mary Strickland</span>
-              </div>
-
-              <h5 class="card-title fw-bold mb-4">
-                Open Programming Courses for Everyone: Python
-              </h5>
-
-              <span class="card-text fs_14">
-                <span class="text-muted"
-                  ><i class="far fa-file-alt"></i> 17 Lessons</span
-                >
-                <span class="ms-4 text-muted"
-                  ><i class="far fa-user text-muted"></i> 62 Students</span
-                >
-              </span>
-            </div>
-          </div>
-
-          <div class="card position-relative border-0 p-0">
-            <img
-              src="../assets/img/stock-full-hd-06-480x298.jpg"
-              class="card-img-top rounded-top"
-              alt="..."
-            />
-            <div class="price position-absolute top-0 end-0 rounded">
-              <h5 class="m-0 text-white fw-bold p-2">$26.00</h5>
-            </div>
-            <div class="card-body p-3">
-              <div class="card-text fs_14 text-muted mb-3">
-                <img
-                  class="rounded-circle"
-                  src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg"
-                  alt=""
-                />
-                <span class="text-muted ps-3">Blanche Fields</span>
-              </div>
-
-              <h5 class="card-title fw-bold mb-4">
-                Academic Listening and Note-taking
-              </h5>
-
-              <span class="card-text fs_14">
-                <span class="text-muted"
-                  ><i class="far fa-file-alt"></i> 14 Lessons</span
-                >
-                <span class="ms-4 text-muted"
-                  ><i class="far fa-user text-muted"></i> 67 Students</span
-                >
-              </span>
-            </div>
-          </div>
-
-          <div class="card position-relative border-0 p-0">
-            <img
-              src="../assets/img/course-featured-image-01-480x298.jpg"
-              class="card-img-top rounded-top"
-              alt="..."
-            />
-            <div class="price position-absolute top-0 end-0 rounded">
-              <h5 class="m-0 text-white fw-bold p-2">$39.00</h5>
-            </div>
-            <div class="card-body p-3">
-              <div class="card-text fs_14 text-muted mb-3">
-                <img
-                  class="rounded-circle"
-                  src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg"
-                  alt=""
-                />
-                <span class="text-muted ps-3">Blanche Fields</span>
-              </div>
-
-              <h5 class="card-title fw-bold mb-4">
-                Master jQuery in a Shot Period of Time
-              </h5>
-
-              <span class="card-text fs_14">
-                <span class="text-muted"
-                  ><i class="far fa-file-alt"></i> 6 Lessons</span
-                >
-                <span class="ms-4 text-muted"
-                  ><i class="far fa-user text-muted"></i> 51 Students</span
-                >
-              </span>
-            </div>
-          </div>
-
-          <div class="card position-relative border-0 p-0">
-            <img
-              src="../assets/img/course-02-480x298.jpg"
-              class="card-img-top rounded-top"
-              alt="..."
-            />
-            <div class="price position-absolute top-0 end-0 rounded">
-              <h5 class="m-0 text-white fw-bold p-2">$59.00</h5>
-            </div>
-            <div class="card-body p-3">
-              <div class="card-text fs_14 text-muted mb-3">
-                <img
-                  class="rounded-circle"
-                  src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg"
-                  alt=""
-                />
-                <span class="text-muted ps-3">Blanche Fields</span>
-              </div>
-
-              <h5 class="card-title fw-bold mb-4">
-                Introduction for Javascript for Beginners
-              </h5>
-
-              <span class="card-text fs_14">
-                <span class="text-muted"
-                  ><i class="far fa-file-alt"></i> 14 Lessons</span
-                >
-                <span class="ms-4 text-muted"
-                  ><i class="far fa-user text-muted"></i> 76 Students</span
+                  ><i class="far fa-user text-muted"></i>
+                  {{ course.students }} Students</span
                 >
               </span>
             </div>
@@ -431,7 +266,9 @@
       </div>
     </section>
 
-    <section class="e_learn">
+    <!-- E-learning features -->
+    <section class="e_learn mb_150">
+      <!-- First item -->
       <div class="container mb_150">
         <div class="text-start d-flex">
           <!-- Side text section -->
@@ -490,6 +327,7 @@
         </div>
       </div>
 
+      <!-- Second Item -->
       <div class="container">
         <div class="text-start d-flex align-items-center wrapper">
           <!-- Side image -->
@@ -509,36 +347,31 @@
               src="../assets/img/maxcoach-shape-07.png"
               alt=""
             />
+            <img
+              class="stripes position-absolute translate-middle"
+              src="../assets/img/maxcoach-shape-01.png"
+              alt=""
+            />
+            <div class="circle position-absolute"></div>
           </div>
 
           <!-- Side text section -->
-          <div class="side_text col-5 ms_150">
+          <div class="side_text col-6 ms_150">
             <h6 class="fs_12 text-muted mb-4 fw-bold">
-              WHY HESITATE TO REGISTER?
+              WHAT ARE YOU LOOKING FOR?
             </h6>
             <h1 class="mb-4 fw-bolder">
-              Learn At Your Own <span class="fw-normal">Pace</span>
+              Learn on you <span class="fw-normal">mobile</span> anytime!
             </h1>
 
-            <!-- Features List -->
-            <ul class="list-group border-0 mb-4">
-              <li class="list-group-item px-0">
-                <i class="fas fa-check pe-3"></i> Select & customize courses to
-                you preferences
-              </li>
-              <li class="list-group-item px-0">
-                <i class="fas fa-check pe-3"></i> Change the tutor and make
-                arrangements
-              </li>
-              <li class="list-group-item px-0">
-                <i class="fas fa-check pe-3"></i> Partecipate in events to join
-                others
-              </li>
-              <li class="list-group-item px-0">
-                <i class="fas fa-check pe-3"></i> Get desired cretificate
-                delivered at house
-              </li>
-            </ul>
+            <!-- Features text -->
+            <div class="text-muted pb-4">
+              <p>
+                Save lessons for later and revise or write notes at any time and
+                on multiple devices on your way. Never interfere with activities
+                of enjoyment or other precious moments.
+              </p>
+            </div>
             <a
               href="#"
               class="btn btn-link fs_12 fw-bold text-white p-0 border-0"
@@ -549,14 +382,284 @@
       </div>
     </section>
 
-    <section class="events"></section>
+    <!-- Upcoming events -->
+    <section class="events">
+      <div class="bg pb_100">
+        <div class="container">
+          <div class="text-center">
+            <h6 class="fs_12 text-muted mb-4 fw-bold">GET IN CONTACT NOW</h6>
+            <h1 class="mb_70 fw-bolder">
+              Upcoming <span class="fw-normal">Events</span>
+            </h1>
+          </div>
 
-    <section class="feedback"></section>
+          <!-- Events list -->
+          <div class="row justify-content-between m-0">
+            <div
+              class="event d-flex justify-content-between"
+              v-for="event in events"
+              :key="event.id"
+            >
+              <div class="location">
+                <p class="text-muted">
+                  <i class="fas fa-map-marker-alt pe-2"></i>{{ event.location }}
+                </p>
+                <h5 class="fw-bold">{{ event.event_name }}</h5>
+              </div>
+              <div class="date d-flex flex-column align-items-center">
+                <h2 class="day">{{ event.day }}</h2>
+                <h6 class="month">{{ event.month }}</h6>
+                <a
+                  href="#"
+                  class="btn btn-link fs_12 fw-bold text-white py-1 border-0"
+                  >Get tickets</a
+                >
+              </div>
+            </div>
+          </div>
+          <h6 class="fs_12 text-muted text-center mt-4 mb-4 fw-bold">
+            Excited about our event?
+            <span
+              >View all event <i class="fas fa-long-arrow-alt-right"></i>
+            </span>
+          </h6>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past users feedbacks -->
+    <section class="feedback">
+      <div class="container">
+        <div class="text-center mb_150">
+          <h6 class="fs_12 text-muted mb-4 fw-bold">
+            PEOPLE ARE PRAISING MAXCOACH
+          </h6>
+          <h1 class="mb_70 fw-bolder">
+            What make they <span class="fw-normal">love us?</span>
+          </h1>
+        </div>
+        <div class="row justify-content-between">
+          <div
+            class="
+              testimonial
+              position-relative
+              d-flex
+              flex-column
+              text-center
+              rounded
+            "
+            v-for="testimonial in testimonials"
+            :key="testimonial.id"
+          >
+            <img
+              class="
+                rounded-circle
+                position-absolute
+                top-0
+                start-50
+                translate-middle
+              "
+              :src="require(`../assets/img/${testimonial.avatar}`)"
+              alt=""
+            />
+            <p class="fb_text">
+              {{ testimonial.message }}
+            </p>
+            <h5 class="fw-bold mb-4">{{ testimonial.name }}</h5>
+            <p class="fs_14 text_muted">{{ testimonial.job }}</p>
+          </div>
+        </div>
+
+        <div class="slider d-flex justify-content-between align-items-center">
+          <div class="dot active"></div>
+          <div class="dot unactive"></div>
+          <div class="dot unactive"></div>
+          <div class="dot unactive"></div>
+        </div>
+
+        <!-- Online certification banner -->
+        <div class="cert text-center position-relative">
+          <h4 class="fw-bold mb-2">
+            Start today for getting
+            <span class="fw-normal">Online Certification</span>
+          </h4>
+          <h2 class="fw-bold mb-5">
+            You can be you own guiding star with our help!
+          </h2>
+          <a href="#" class="btn btn-link fs_12 fw-bold text-white p-0 border-0"
+            >Get started now</a
+          >
+          <img
+            class="position-absolute lines"
+            src="../assets/img/maxcoach-shape-01.png"
+            alt=""
+          />
+          <img
+            class="position-absolute circle_shape"
+            src="../assets/img/maxcoach-shape-02.png"
+            alt=""
+          />
+
+          <div class="circle position-absolute"></div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      courses: [
+        {
+          id: "1",
+          teacher_img: "73ee246daf47502812ccefc84bf02898.jpeg",
+          teacher_name: "Blanche Fields",
+          price: "$40.00",
+          course_img: "course-02-480x298.jpg",
+          course_name: "Learning to Write as a Professional Author",
+          lessons: "20",
+          students: "50",
+        },
+
+        {
+          id: "2",
+          teacher_img: "d0d504142acfde820eef2f11feea6253.jpeg",
+          teacher_name: "Mary Strickland",
+          price: "Free",
+          course_img: "stock-full-hd-03-480x298.jpg",
+          course_name: "Customer-centric Info-Tech Strategies",
+          lessons: "24",
+          students: "769",
+        },
+
+        {
+          id: "3",
+          teacher_img: "d0d504142acfde820eef2f11feea6253.jpeg",
+          teacher_name: "Mary Strickland",
+          price: "$19.00",
+          course_img: "stock-full-hd-04-480x298.jpg",
+          course_name: "Open Programming Courses for Everyone: Python",
+          lessons: "17",
+          students: "62",
+        },
+
+        {
+          id: "4",
+          teacher_img: "73ee246daf47502812ccefc84bf02898.jpeg",
+          teacher_name: "Blanche Fields",
+          price: "$26.00",
+          course_img: "stock-full-hd-06-480x298.jpg",
+          course_name: "Academic Listening and Note-taking",
+          lessons: "14",
+          students: "67",
+        },
+
+        {
+          id: "5",
+          teacher_img: "73ee246daf47502812ccefc84bf02898.jpeg",
+          teacher_name: "Blanche Fields",
+          price: "$39.00",
+          course_img: "course-featured-image-01-480x298.jpg",
+          course_name: "Master jQuery in a Shot Period of Time",
+          lessons: "6",
+          students: "51",
+        },
+
+        {
+          id: "6",
+          teacher_img: "73ee246daf47502812ccefc84bf02898.jpeg",
+          teacher_name: "Blanche Fields",
+          price: "$59.00",
+          course_img: "course-02-480x298.jpg",
+          course_name: "Master jQuery in a Shot Period of Time",
+          lessons: "14",
+          students: "76",
+        },
+      ],
+
+      events: [
+        {
+          id: "1",
+          location: "Texas, US",
+          event_name: "Storytelling Workshop",
+          day: "22",
+          month: "NOV",
+        },
+
+        {
+          id: "2",
+          location: "New York, US",
+          event_name: "Painting Art Contest 2020",
+          day: "10",
+          month: "OCT",
+        },
+
+        {
+          id: "3",
+          location: "Hamburg, Germany",
+          event_name: "Storytelling Workshop",
+          day: "23",
+          month: "NOV",
+        },
+
+        {
+          id: "4",
+          location: "Illinois, US",
+          event_name: "Street Performance: Call for Artist",
+          day: "15",
+          month: "DEC",
+        },
+
+        {
+          id: "5",
+          location: "llinois, US",
+          event_name: "Consumer Food Safety Education Conference",
+          day: "22",
+          month: "JUL",
+        },
+
+        {
+          id: "6",
+          location: "Dubai",
+          event_name: "How medation improve your mental health?",
+          day: "12",
+          month: "AUG",
+        },
+      ],
+
+      testimonials: [
+        {
+          avatar: "testimonial-avata-02.jpg",
+          message:
+            "I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.",
+          name: "MINA HOLLACE",
+          job: "/ Freelancer",
+          id: "1",
+        },
+
+        {
+          avatar: "testimonial-avata-04.jpg",
+          message:
+            "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+          name: "MADLEY PONDOR",
+          job: "/ IT Specialist",
+          id: "2",
+        },
+
+        {
+          avatar: "testimonial-avata-01.jpg",
+          message:
+            "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
+          name: "LUVIC DUBBLE",
+          job: "/ Private Tutor",
+          id: "3",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -619,9 +722,10 @@ export default {};
 
 .last_courses {
   height: 100%;
-  border-bottom-left-radius: 40%;
-  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 35% 10%;
+  border-bottom-right-radius: 35% 10%;
   background-image: linear-gradient(white, #f5f5f5);
+
   h1 {
     color: $max_wine;
   }
@@ -663,6 +767,7 @@ export default {};
 
   .wrapper {
     margin-left: 80px;
+
     .learn_mobile {
       z-index: 2;
     }
@@ -675,8 +780,18 @@ export default {};
     }
 
     .mc_shape_square {
-      right: -200px;
+      right: -190px;
       bottom: -35px;
+    }
+
+    .stripes {
+      left: -110px;
+      top: 255px;
+    }
+
+    .circle {
+      right: -90px;
+      top: 40px;
     }
   }
 
@@ -702,6 +817,126 @@ export default {};
       width: 210px;
       line-height: 50px;
       text-decoration: none;
+    }
+  }
+}
+
+.events {
+  h1 {
+    color: $max_wine;
+  }
+  span {
+    color: $aquagreen;
+  }
+  background: $event_bg;
+  .bg {
+    background: white;
+    border-bottom-right-radius: 55% 40%;
+  }
+
+  .event {
+    width: 570px;
+    padding: 33px;
+    margin-bottom: 30px;
+
+    .day {
+      color: $aquagreen;
+    }
+    .btn {
+      background: $aquagreen;
+      width: 130px;
+      text-decoration: none;
+    }
+  }
+  h6 {
+    span {
+      border-bottom: 1px solid lightgray;
+    }
+  }
+}
+
+.feedback {
+  padding-top: 100px;
+  border-top-right-radius: -50%;
+  background: $event_bg;
+
+  h1 {
+    color: $max_wine;
+  }
+
+  span {
+    color: $aquagreen;
+  }
+
+  .row {
+    .testimonial {
+      background: white;
+      padding: 33px;
+      width: 370px;
+      height: 350px;
+
+      img {
+        width: 140px;
+      }
+      .fb_text {
+        color: $max_wine;
+        font-size: 16px;
+        padding-top: 70px;
+        margin-bottom: 40px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .slider {
+    width: 100px;
+    margin: 50px auto;
+    padding-bottom: 50px;
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      background-color: gray;
+      border-radius: 50%;
+      border: none;
+    }
+
+    .active {
+      width: 13px;
+      height: 13px;
+      background-color: $max_wine;
+    }
+  }
+
+  .cert {
+    h4,
+    h2 {
+      color: $max_wine;
+    }
+
+    padding-bottom: 100px;
+
+    .btn {
+      background: $aquagreen;
+      width: 260px;
+      line-height: 50px;
+      text-decoration: none;
+    }
+
+    .circle_shape {
+      bottom: 85px;
+      right: 0px;
+    }
+
+    .lines {
+      bottom: 165px;
+      left: 0px;
+    }
+
+    .circle {
+      left: 0px;
+      top: 10px;
+      border-color: #e6dcd2;
     }
   }
 }
