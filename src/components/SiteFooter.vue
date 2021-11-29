@@ -7,6 +7,7 @@
           <p>382 NE 191st St # 87394 Miami, FL 33179-3899</p>
           <p>+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
           <p>support@maxcoach.com</p>
+
           <span class="icons fs-3">
             <a href=""><i class="fab fa-facebook-square text-muted"></i></a>
             <a href=""><i class="fab fa-twitter ps-4 text-muted"></i></a>
@@ -14,6 +15,7 @@
             <a href=""><i class="fab fa-linkedin ps-4 text-muted"></i></a>
           </span>
         </div>
+
         <div class="col-6 dx d-flex">
           <div>
             <h5 class="fs-6 text-black fw-bold pb-3">Explore</h5>
@@ -23,6 +25,7 @@
               </p>
             </div>
           </div>
+
           <div class="col-4 info">
             <h5 class="fs-6 text-black fw-bold pb-3">Information</h5>
             <p class="fs_12" v-for="single in info" :key="single.link">
@@ -31,6 +34,9 @@
           </div>
         </div>
       </div>
+      <p class="text-center rights pb-4 fs_12">
+        &#9400; 2020 MaxCoach. All Rights Reserved
+      </p>
     </div>
   </footer>
 </template>
@@ -84,9 +90,9 @@ footer {
           }
         }
       }
-
-      .info {
-      }
+    }
+    .rights {
+      color: #b6b6b6;
     }
   }
 }
