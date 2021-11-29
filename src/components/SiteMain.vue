@@ -1,5 +1,20 @@
 <template>
-  <main>
+  <main class="position-relative">
+    <div
+      class="
+        tools
+        position-fixed
+        d-flex
+        flex-column
+        justify-content-around
+        align-items-center
+      "
+    >
+      <i class="fas fa-ruler-combined"></i>
+      <i class="far fa-life-ring"></i>
+      <i class="fas fa-book"></i>
+      <i class="fas fa-shopping-cart"></i>
+    </div>
     <section class="coding_course">
       <div class="container text-center">
         <h6 class="fs_12 text-muted mb-3 fw-bold">
@@ -10,70 +25,25 @@
         </h1>
 
         <div class="coding_features d-flex justify-content-between mb_100">
-          <div class="card col-3 border-0">
+          <div
+            class="card col-3 border-0"
+            v-for="feature in features"
+            :key="feature.title"
+          >
             <img
-              src="../assets/img/home-5-image-box-01.png"
+              :src="require(`../assets/img/${feature.img}`)"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body px-0">
-              <h5 class="card-title mb-3">Idea Discussion</h5>
+              <h5 class="card-title mb-3">{{ feature.title }}</h5>
               <p class="card-text fs_14 text-muted">
-                Get teamed up with the specialists who work and teach coding for
-                years at famous universities.
+                {{ feature.descr }}
               </p>
-              <a href="#" class="btn btn-link fs_12 fw-bold"
-                >Start now <i class="fas fa-long-arrow-alt-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card col-3 border-0">
-            <img
-              src="../assets/img/home-5-image-box-02.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body px-0">
-              <h5 class="card-title mb-3">Web Development</h5>
-              <p class="card-text fs_14 text-muted">
-                Learn to start nuilding a webpage from scratch. You decide your
-                own pace, course and speed.
-              </p>
-              <a href="#" class="btn btn-link fs_12 fw-bold"
-                >Start now <i class="fas fa-long-arrow-alt-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card col-3 border-0">
-            <img
-              src="../assets/img/home-5-image-box-03.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body px-0">
-              <h5 class="card-title mb-3">System Administration</h5>
-              <p class="card-text fs_14 text-muted">
-                Learners are encouraged to study the mechanism and structure of
-                system administration.
-              </p>
-              <a href="#" class="btn btn-link fs_12 fw-bold"
-                >Start now <i class="fas fa-long-arrow-alt-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card col-3 border-0">
-            <img
-              src="../assets/img/home-5-image-box-04.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body px-0">
-              <h5 class="card-title mb-3">Graphic Design</h5>
-              <p class="card-text fs_14 text-muted">
-                Have a passion fro graphic and arts? Show your talents with
-                confidence and self-assertiveness.
-              </p>
-              <a href="#" class="btn btn-link fs_12 fw-bold"
+              <a
+                href="#"
+                class="btn btn-link fs_12 fw-bold text-muted"
+                id="startNow"
                 >Start now <i class="fas fa-long-arrow-alt-right"></i
               ></a>
             </div>
@@ -222,11 +192,13 @@
             v-for="course in courses"
             :key="course.id"
           >
-            <img
-              :src="require(`../assets/img/${course.course_img}`)"
-              class="card-img-top rounded-top"
-              alt="..."
-            />
+            <div class="img_wrapper">
+              <img
+                :src="require(`../assets/img/${course.course_img}`)"
+                class="card-img-top rounded-top"
+                alt="..."
+              />
+            </div>
 
             <div class="price position-absolute top-0 end-0 rounded">
               <h5 class="m-0 text-white fw-bold p-2">{{ course.price }}</h5>
@@ -396,7 +368,13 @@
           <!-- Events list -->
           <div class="row justify-content-between m-0">
             <div
-              class="event d-flex justify-content-between"
+              class="
+                event
+                d-flex
+                justify-content-between
+                rounded
+                position-relative
+              "
               v-for="event in events"
               :key="event.id"
             >
@@ -408,13 +386,14 @@
               </div>
               <div class="date d-flex flex-column align-items-center">
                 <h2 class="day">{{ event.day }}</h2>
-                <h6 class="month">{{ event.month }}</h6>
+                <h6 class="month fw-bold">{{ event.month }}</h6>
                 <a
                   href="#"
                   class="btn btn-link fs_12 fw-bold text-white py-1 border-0"
                   >Get tickets</a
                 >
               </div>
+              <div class="line position-absolute rounded"></div>
             </div>
           </div>
           <h6 class="fs_12 text-muted text-center mt-4 mb-4 fw-bold">
@@ -511,6 +490,36 @@
 export default {
   data() {
     return {
+      features: [
+        {
+          img: "home-5-image-box-01.png",
+          title: "Idea Discussion",
+          descr:
+            "Get teamed up with the specialists who work and teach coding for years at famous universities.",
+        },
+
+        {
+          img: "home-5-image-box-02.png",
+          title: "Web Development",
+          descr:
+            "Learn to start nuilding a webpage from scratch. You decide your own pace, course and speed.",
+        },
+
+        {
+          img: "home-5-image-box-03.png",
+          title: "System Administration",
+          descr:
+            "Learners are encouraged to study the mechanism and structure of system administration.",
+        },
+
+        {
+          img: "home-5-image-box-04.png",
+          title: "Graphic Design",
+          descr:
+            "Have a passion fro graphic and arts? Show your talents with confidence and self-assertiveness.",
+        },
+      ],
+
       courses: [
         {
           id: "1",
@@ -665,6 +674,17 @@ export default {
 <style lang="scss">
 @import "../assets/scss/variables.scss";
 
+.tools {
+  height: 160px;
+  width: 40px;
+  top: 200px;
+  right: 0;
+  background-color: #fff;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  z-index: 2;
+}
+
 .coding_course {
   padding: 90px 0;
 
@@ -683,7 +703,6 @@ export default {
     .card-body {
       .btn {
         text-decoration: none;
-        color: $max_wine;
       }
     }
   }
@@ -734,12 +753,35 @@ export default {
   }
   .card {
     width: 370px;
+    background: transparent !important;
+    transition: all 0.5s;
+    overflow: hidden;
+
+    .card-img-top {
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      background: white !important;
+      box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
+      cursor: pointer;
+    }
+
+    &:hover .card-img-top {
+      transform: scale(1.1);
+      object-fit: cover;
+    }
+    .img_wrapper {
+      overflow: hidden;
+    }
+
     .price {
       background: $aquagreen;
       border-top-left-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
     }
   }
+
   .btn {
     background: $aquagreen;
     width: 260px;
@@ -838,6 +880,20 @@ export default {
     width: 570px;
     padding: 33px;
     margin-bottom: 30px;
+    background: $event_bg;
+    transition: all 0.5s;
+    border: 3px transparent;
+
+    &:hover {
+      background: white;
+      cursor: pointer;
+      box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
+      border-left-color: 3px solid $aquagreen !important;
+    }
+
+    &:hover .line {
+      opacity: 100%;
+    }
 
     .day {
       color: $aquagreen;
@@ -847,7 +903,20 @@ export default {
       width: 130px;
       text-decoration: none;
     }
+
+    .line {
+      height: 100%;
+      top: 0;
+      left: 0;
+      width: 3px;
+      background-color: $aquagreen;
+      opacity: 0%;
+      transition: all 0.5s;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
   }
+
   h6 {
     span {
       border-bottom: 1px solid lightgray;

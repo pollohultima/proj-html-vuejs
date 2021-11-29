@@ -52,13 +52,19 @@ padding-bottom: 100px;
 }
 
 .btn{
-    transition: all .5s!important;
-    
+    transition: background .5s!important;
+    &:hover{
+        background: #513E5E!important;
+    }
 }
 
-.btn:hover{
-    background: #513E5E!important;
-    color:white!important;
+#startNow{
+    transition: all .5s!important;
+    &:hover{
+        color: #0088cc!important;
+    background-color: #f8f8f8!important;
+    }
 }
+
 
 
