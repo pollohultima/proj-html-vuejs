@@ -147,12 +147,16 @@ header {
 
   .jumbo {
     .container {
+      .side_text {
+        z-index: 2;
+        position: relative;
+      }
       height: 720px;
       h1 {
         color: $max_wine;
       }
       .btn {
-        background: $max_wine;
+        background: $aquagreen;
         line-height: 50px;
         vertical-align: middle;
         width: 260px;
