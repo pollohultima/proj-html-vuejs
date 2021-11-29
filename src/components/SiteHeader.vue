@@ -18,13 +18,22 @@
             justify-content-between
           "
         >
-          <a href="">Home <i class="fas fa-chevron-down"></i></a>
-          <a href="">Pages <i class="fas fa-chevron-down"></i></a>
-          <a href="">Courses <i class="fas fa-chevron-down"></i></a>
-          <a href="">Features <i class="fas fa-chevron-down"></i></a>
-          <a href="">Blog <i class="fas fa-chevron-down"></i></a>
-          <a href=""
-            >Shop <i class="fas fa-chevron-down"></i>
+          <a href="" v-for="tab in tabs" :key="tab.link"
+            >{{ tab.link }} <i class="fas fa-chevron-down"></i
+          ></a>
+          <a href="" class="position-relative"
+            >Shop <i class="fas fa-chevron-down"></i
+            ><span
+              class="
+                position-absolute
+                top-0
+                start-100
+                translate-middle
+                badge
+                rounded-circle
+              "
+              >0</span
+            >
             <i class="fas fa-shopping-cart ps-2 text-black"></i
           ></a>
           <a href=""><i class="far fa-user-circle text-black"></i></a>
@@ -82,7 +91,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      tabs: [
+        { link: "Home" },
+        { link: "Pages" },
+        { link: "Courses" },
+        { link: "Features" },
+        { link: "Blog" },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -97,6 +118,11 @@ header {
     }
     img {
       height: 25px;
+    }
+    .badge {
+      background-color: $aquagreen;
+      padding: 0 3.5px;
+      line-height: 15px;
     }
     .nav_search {
       a {
